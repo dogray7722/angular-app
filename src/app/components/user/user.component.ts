@@ -13,31 +13,25 @@ import { Component } from '@angular/core'
 
 export class UserComponent {
   // Properties
-  firstName = 'John';
-  lastName = 'Doe';
-  age = 30;
-  address = {
-    street: '50 Main St',
-    city: 'Denver',
-    state: 'CO'
-  }
+  firstName: string;
+  lastName: string; 
+  age: number;
+  address: any;
 
+  foo: any;
+  hasKids: boolean;
+  
   // Methods
   constructor() {
-    // this.sayHello();
-    console.log(`Yesterday you were ${this.age}.`)
-      this.hasBirthday()
-    console.log(`But today's your birthday, so now you are ${this.age} years old.`) 
-    console.log("Happy Birthday old fuck!")
+      this.firstName = 'John';
+      this.lastName = 'Doe';
+      this.age = 30;
+      this.address = {
+        street: '50 Main St',
+        city: 'Denver',
+        state: 'CO'
+      }
+      this.hasKids = false
+
   }
-
-  sayHello() {
-    console.log(`Hello ${this.firstName}`)
-  }
-
-  hasBirthday() {
-    this.age += 1;
-  }
-
-
 }
