@@ -16,6 +16,11 @@ export class UserComponent {
   firstName = 'John';
   lastName = 'Doe';
   age = 30;
+  address = {
+    street: '50 Main St',
+    city: 'Denver',
+    state: 'CO'
+  }
 
   // Methods
   constructor() {
