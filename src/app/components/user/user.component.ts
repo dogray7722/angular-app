@@ -20,6 +20,14 @@ export class UserComponent {
 
   foo: any;
   hasKids: boolean;
+  numberArray: number[];
+  stringArray: string[];
+  mixedArray: any[];
+  myTuple: [string, number, boolean];
+  unusable: void;
+  u: undefined;
+  n: null;
+
   
   // Methods
   constructor() {
@@ -32,6 +40,18 @@ export class UserComponent {
         state: 'CO'
       }
       this.hasKids = false
+      this.numberArray = [1,3,5]
+      this.stringArray = ["hello", "world"]
+      this.mixedArray = [true, "fart", 2] 
+      this.myTuple = ["toad", 12, false]
+      this.unusable = undefined
+      this.u = undefined
+      this.n = null
 
+      console.log(this.addNumbers(2, 3))
   }
+
+  addNumbers(num1: number, num2: number): number {
+    return num1 + num2;
+  } 
 }
