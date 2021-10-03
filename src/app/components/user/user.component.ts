@@ -18,19 +18,20 @@ export class UserComponent implements OnInit {
   
   // Methods
   constructor() {
-
-  }
-
-  ngOnInit(): void {
     this.user = {
-      firstName: "John",
-      lastName: "Doe",
+      firstName: 'John',
+      lastName: 'Doe',
       age: 30,
       address: {
-        street: "50 Main St",
-        city: "Denver",
-        state: "CO",
-      },
-    };
+        street: '50 Main St',
+        city: 'Denver',
+        state: 'CO'
+      }
+    }
   }
+
+  ngOnInit() {
+    
+  }
+
 }
